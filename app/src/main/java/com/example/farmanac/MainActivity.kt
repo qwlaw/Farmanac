@@ -12,14 +12,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val leftIcon: ImageView = findViewById(R.id.left_icon)
+        val menuIcon: ImageView = findViewById(R.id.menu_icon)
         val title: TextView = findViewById(R.id.toolbar_title)
+
         val homeIcon: ImageView = findViewById(R.id.home_icon)
         val guideIcon: ImageView = findViewById(R.id.guide_icon)
         val forumIcon: ImageView = findViewById(R.id.forum_icon)
         val profileIcon: ImageView = findViewById(R.id.profile_icon)
 
-        leftIcon.setOnClickListener { onClick("left icon") }
+        menuIcon.setOnClickListener { onClick("menu icon") }
 
         title.setOnClickListener { title.swapName() }
 
