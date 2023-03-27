@@ -1,13 +1,21 @@
 package com.example.farmanac
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import java.time.LocalDate
+import java.time.LocalTime
 
 class MainActivity : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,13 +28,16 @@ class MainActivity : AppCompatActivity() {
         val forumIcon: ImageView = findViewById(R.id.forum_icon)
         val profileIcon: ImageView = findViewById(R.id.profile_icon)
 
+        switchFragment(HomeFragment())
+
         menuIcon.setOnClickListener { onClick("menu icon") }
 
         title.setOnClickListener { title.swapName() }
 
         homeIcon.setOnClickListener { switchFragment(HomeFragment()) }
         guideIcon.setOnClickListener { switchFragment(GuideFragment()) }
-        forumIcon.setOnClickListener { switchFragment(ForumFragment()) }
+        forumIcon.setOnClickListener { switchFragment(ForumFragment())
+        }
         profileIcon.setOnClickListener { switchFragment(ProfileFragment()) }
     }
 

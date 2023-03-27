@@ -40,6 +40,7 @@
             tools:text="26/3/2023" />
 
         <ImageView
+            android:id="@+id/forum_action_icon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/baseline_drag_indicator_24"
@@ -69,5 +70,7 @@
             app:layout_constraintStart_toStartOf="@id/forum_title"
             app:layout_constraintTop_toBottomOf="@+id/forum_title"
             tools:text="Content" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
