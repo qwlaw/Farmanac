@@ -24,7 +24,7 @@ class ForumAdapter(): RecyclerView.Adapter<ForumViewHolder>() {
         holder.username.text = forums[position].username
         holder.uploadDate.text = forums[position].uploadDate.toString()
         holder.forumTitle.text = forums[position].title
-        holder.forumContent.text = forums[position].content
+        holder.forumContent.text = forums[position].description
     }
 
     override fun getItemCount(): Int {

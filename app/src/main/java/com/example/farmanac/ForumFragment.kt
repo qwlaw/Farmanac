@@ -35,11 +35,11 @@ class ForumFragment : Fragment() {
         val recyclerview: RecyclerView = view.findViewById(R.id.forum_recycler_view)
 
         val forums = ArrayList<Forum>()
-        forums.add(Forum(R.drawable.baseline_account_circle_24, "JellyFish", "Cabbage", "Cabbage is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(R.drawable.baseline_account_circle_24, "LCH", "Carrot", "Carrot is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(R.drawable.baseline_account_circle_24, "LQW", "Potato", "Potato is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(R.drawable.baseline_account_circle_24, "LQT", "Ginger", "Ginger is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(R.drawable.baseline_account_circle_24, "TMF", "Dolphin", "Dolphin is not a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
+        forums.add(Forum(1, R.drawable.baseline_account_circle_24, "JellyFish", "Cabbage", "Cabbage is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
+        forums.add(Forum(2, R.drawable.baseline_account_circle_24, "LCH", "Carrot", "Carrot is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
+        forums.add(Forum(3, R.drawable.baseline_account_circle_24, "LQW", "Potato", "Potato is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
+        forums.add(Forum(4, R.drawable.baseline_account_circle_24, "LQT", "Ginger", "Ginger is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
+        forums.add(Forum(5, R.drawable.baseline_account_circle_24, "TMF", "Dolphin", "Dolphin is not a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
 
         recyclerview.setHasFixedSize(true)
         recyclerview.layoutManager = LinearLayoutManager(view.context)

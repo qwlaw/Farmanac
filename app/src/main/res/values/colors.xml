@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="farm_green">#1AA619</color>
+    <color name="forum_background">#AAAAFF</color>
 </resources>

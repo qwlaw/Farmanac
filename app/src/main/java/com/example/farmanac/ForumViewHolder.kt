@@ -11,5 +11,5 @@ class ForumViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val username: TextView = itemView.findViewById(R.id.forum_username)
     val uploadDate: TextView = itemView.findViewById(R.id.forum_upload_date)
     val forumTitle: TextView = itemView.findViewById(R.id.forum_title)
-    val forumContent: TextView = itemView.findViewById(R.id.forum_content)
+    val forumContent: TextView = itemView.findViewById(R.id.forum_description)
 }
