@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -29,6 +30,7 @@ class ForumFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_forum, container, false)
 
@@ -38,8 +40,6 @@ class ForumFragment : Fragment() {
         forums.add(Forum(1, R.drawable.baseline_account_circle_24, "JellyFish", "Cabbage", "Cabbage is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
         forums.add(Forum(2, R.drawable.baseline_account_circle_24, "LCH", "Carrot", "Carrot is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
         forums.add(Forum(3, R.drawable.baseline_account_circle_24, "LQW", "Potato", "Potato is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(4, R.drawable.baseline_account_circle_24, "LQT", "Ginger", "Ginger is a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
-        forums.add(Forum(5, R.drawable.baseline_account_circle_24, "TMF", "Dolphin", "Dolphin is not a vegetable", LocalDate.of(2023, 3, 26), LocalTime.of(11, 28)))
 
         recyclerview.setHasFixedSize(true)
         recyclerview.layoutManager = LinearLayoutManager(view.context)
@@ -47,5 +47,6 @@ class ForumFragment : Fragment() {
 
         return view
     }
+
 
 }

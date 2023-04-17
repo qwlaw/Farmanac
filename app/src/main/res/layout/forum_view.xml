@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="30dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="30dp"
-    android:layout_marginBottom="20dp"
-    android:backgroundTint="@color/forum_background"
     app:cardCornerRadius="10dp"
-    app:contentPadding="15dp">
+    app:cardBackgroundColor="@color/forum_background"
+    style="@style/forum_cards">
 
     <!--Whole box-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
 
         <!--Forum details-->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/profile_pic"
                 app:layout_constraintTop_toTopOf="@id/profile_pic"
@@ -46,7 +43,7 @@
                 android:id="@+id/forum_upload_date"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/profile_pic"
                 app:layout_constraintStart_toStartOf="@+id/forum_username"
@@ -76,7 +73,7 @@
                 android:id="@+id/forum_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/profile_pic"
@@ -86,7 +83,7 @@
                 android:id="@+id/forum_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/forum_title"
                 app:layout_constraintTop_toBottomOf="@+id/forum_title"
@@ -104,7 +101,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 android:text="300"
                 tools:text="300"/>
